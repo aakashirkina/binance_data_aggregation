@@ -48,7 +48,7 @@ def main() -> None:
     solution_pd.to_csv(f"{processed_data_dir}\solution_pd.csv", index=False)
     solution_cycle.to_csv(f"{processed_data_dir}\solution_cycle.csv", index=False)
 
-    # comparison of the speed (cycles are faster for the 1 minute timestamp)
+    # comparison of the speed (for the 1 minute timestamp speed was approximately the same)
     print(f"#cycle won: {cycle_won}, #pandas won: {len(solution_cycle)-cycle_won}")
 
 
